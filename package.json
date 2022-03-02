@@ -1,0 +1,23 @@
+{
+  "name": "sample-search-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkashi/sample-search-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkashi/sample-search-service/issues"
+  },
+  "homepage": "https://github.com/tkashi/sample-search-service#readme",
+  "dependencies": {
+    "@aws-sdk/client-kendra": "^3.53.0",
+    "express": "^4.17.3"
+  }
+}
