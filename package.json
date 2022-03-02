@@ -18,6 +18,7 @@
   "homepage": "https://github.com/tkashi/sample-search-service#readme",
   "dependencies": {
     "@aws-sdk/client-kendra": "^3.53.0",
+    "@aws-sdk/s3-request-presigner": "^3.53.1",
     "express": "^4.17.3"
   }
 }
