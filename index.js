@@ -13,12 +13,8 @@ app.get('/api/search', async (req, res, next) => {
     const client = new KendraClient({ region: 'us-east-1'})
     const params = {
         QueryText: req.query.keyword,
-        IndexId: 'ed40aa0a-496b-4c2f-bcb6-3d9cd7bb17f5'
+        IndexId: process.env.KENDRA_INDEX
     };
-
-    // if (req.query.categories && req.query.categories.length > 0) {
-    //   params.AttributeFilter = {"ContainsAny": { "Key": "_category", "Value": { "StringListValue": [req.query.categories] }}}
-    // }
 
     if (req.query.category) {
       params.AttributeFilter = {"EqualsTo": {"Key": "_category","Value": {"StringValue": req.query.category}}}
