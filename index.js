@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/search', async (req, res, next) => {
+app.get('/api/search', async (req, res, next) => {
     console.log(req.query);
     const client = new KendraClient({ region: 'us-east-1'})
     const params = {
