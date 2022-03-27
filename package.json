@@ -6,16 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tkashi/sample-search-service.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tkashi/sample-search-service/issues"
-  },
-  "homepage": "https://github.com/tkashi/sample-search-service#readme",
   "dependencies": {
     "@aws-sdk/client-kendra": "^3.53.0",
     "@aws-sdk/s3-request-presigner": "^3.53.1",
